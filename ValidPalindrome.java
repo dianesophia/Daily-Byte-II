@@ -10,9 +10,6 @@ public class ValidPalindrome{
     
     boolean ans = (word.equals(newWord)) ? true :  false; 
      
-    System.out.print(ans);
-    
-    
-        
+    System.out.print(ans);      
   }
 }
