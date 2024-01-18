@@ -18,7 +18,6 @@ public class CorrectCapitalization{
       if(Character.isUpperCase(ch[0])){
          firstLetter = true;
       }
-     // System.out.print(upperLetter);
       
       System.out.println(firstLetter && upperLetter == 0 || !firstLetter && upperLetter == 0 || firstLetter && upperLetter == ch.length-1 ? "True" : "False");
    }
