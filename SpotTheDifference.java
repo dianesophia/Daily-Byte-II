@@ -23,6 +23,6 @@ public class SpotTheDifference{
           ans = t[i];
      }
      
-     System.out.print(ans != '\u0000' ? "The unique value is " + ans : "There is no unique character");
+     System.out.print(ans != '\u0000' ? "The unique value is " + ans : "There is no unique character in the value s and t");
   }
 }
