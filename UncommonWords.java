@@ -39,3 +39,42 @@ public class UncommonWords{
       System.out.print("The uncommon words are : " + set);
    }
 }
+
+/*
+import java.util.*;
+
+public class UncommonWords {
+    public static void main(String ...args) {
+        Scanner sc = new Scanner(System.in);
+        Map<String, Integer> wordOccurrences = new HashMap<>();
+        Set<String> uncommonWords = new HashSet<>();
+
+        System.out.print("Enter the first sentence: ");
+        String sentence1 = sc.nextLine();
+        String[] s1 = sentence1.split(" ");
+
+        System.out.print("Enter the second sentence: ");
+        String sentence2 = sc.nextLine();
+        String[] s2 = sentence2.split(" ");
+
+        // Count occurrences of words in both sentences
+        for (String word : s1) {
+            wordOccurrences.put(word, wordOccurrences.getOrDefault(word, 0) + 1);
+        }
+
+        for (String word : s2) {
+            wordOccurrences.put(word, wordOccurrences.getOrDefault(word, 0) + 1);
+        }
+
+        // Find uncommon words
+        for (Map.Entry<String, Integer> entry : wordOccurrences.entrySet()) {
+            if (entry.getValue() == 1) {
+                uncommonWords.add(entry.getKey());
+            }
+        }
+
+        System.out.println("The uncommon words are: " + uncommonWords);
+    }
+}
+
+*/
