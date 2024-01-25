@@ -20,7 +20,7 @@ public class FindMiddleElement {
 
     public static ListNode findMiddle(ListNode list) {
         ListNode slow = list;
-        ListNode fast = list;
+        ListNode fast = list.next;
 
         while (fast != null && fast.next != null) {
             slow = slow.next;
@@ -49,7 +49,8 @@ public class FindMiddleElement {
                 current = current.next;
             }
         }
-
+    
+      
         if (list != null) {
             System.out.print("The middle element in the Linked list is " + findMiddle(list).val);
         } else {
